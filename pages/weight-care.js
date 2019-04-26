@@ -96,9 +96,15 @@ export default () => {
 								},
 							]}
 						/>
-						<Box direction="row" justify="end">
-							<Button icon={<Icons.AddCircle />} onClick={openAddModal} />
+						<Box direction="row">
+							<Button
+								primary
+								icon={<Icons.AddCircle />}
+								label="Add"
+								onClick={openAddModal}
+							/>
 						</Box>
+							<br />
 						<Box direction="row" flex justify="center" fill={size === 'small'}>
 							<DataTable columns={renderColumn(size)} data={DATA} />
 						</Box>
